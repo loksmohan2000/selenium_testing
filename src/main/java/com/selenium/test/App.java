@@ -19,8 +19,10 @@ public class App
         //System.out.println( "Hello facebook!" );
         //driver installed location
        // System.setProperty("webdriver.chrome.driver" , "/Users/lokeshwarimohan/documents/softwares/chromedriver/chromedriver");
-        WebDriverManager.chromedriver().setup();
-        ChromeOptions chromeOptions = new ChromeOptions();
+       WebDriverManager.chromedriver().setup();
+       
+       
+       ChromeOptions chromeOptions = new ChromeOptions();
     
     
     WebDriver  driver = new ChromeDriver(chromeOptions);
