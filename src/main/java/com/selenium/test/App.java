@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 /**
  * Hello world!
  *
@@ -14,11 +16,11 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello facebook!" );
+        //System.out.println( "Hello facebook!" );
         //driver installed location
-        System.setProperty("webdriver.chrome.driver" , "/Users/lokeshwarimohan/documents/softwares/chromedriver/chromedriver");
-        
-    ChromeOptions chromeOptions = new ChromeOptions();
+       // System.setProperty("webdriver.chrome.driver" , "/Users/lokeshwarimohan/documents/softwares/chromedriver/chromedriver");
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions chromeOptions = new ChromeOptions();
     
     
     WebDriver  driver = new ChromeDriver(chromeOptions);
